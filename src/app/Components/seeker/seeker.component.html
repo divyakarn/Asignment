@@ -1,24 +1,25 @@
 <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
     <div class="card">
-        <div class="card-body">
-            <h5 class="card-title text-center">New Seeker</h5>
-            <form>
-                <div class="mb-3">
-                    <label for="field1" class="form-label">State</label>
-                    <input type="text" class="form-control" id="field1" placeholder="Enter State">
-                </div>
-                <div class="mb-3">
-                    <label for="field2" class="form-label">City</label>
-                    <input type="text" class="form-control" id="field2" placeholder="Enter City">
-                </div>
-                <div class="mb-3">
-                    <label for="field3" class="form-label">Area</label>
-                    <input type="text" class="form-control" id="field3" placeholder="Enter Area">
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-primary">Seek</button>
-                </div>
-            </form>
-        </div>
+      <div class="card-body">
+        <h3 class="card-title text-center">New Seeker</h3>
+        <form [formGroup]="seekerForm" (ngSubmit)="onSubmit()">
+          <div class="mb-3">
+            <label for="field1" class="form-label">State</label>
+            <input type="text" class="form-control" id="field1" formControlName="state" placeholder="Enter State">
+          </div>
+          <div class="mb-3">
+            <label for="field2" class="form-label">City</label>
+            <input type="text" class="form-control" id="field2" formControlName="city" placeholder="Enter City">
+          </div>
+          <div class="mb-3">
+            <label for="field3" class="form-label">Area</label>
+            <input type="text" class="form-control" id="field3" formControlName="area" placeholder="Enter Area">
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Seek</button>
+          </div>
+        </form>
+      </div>
     </div>
-</div>
+  </div>
+  

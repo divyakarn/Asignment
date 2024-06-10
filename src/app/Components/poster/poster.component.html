@@ -1,1 +1,30 @@
-<p>poster works!</p>
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">New Poster</h3>
+        <form [formGroup]="posterForm" (ngSubmit)="onSubmit('post')">
+          <div class="mb-3">
+            <label for="field1" class="form-label">State</label>
+            <input type="text" class="form-control" id="field1" formControlName="state" placeholder="Enter State">
+          </div>
+          <div class="mb-3">
+            <label for="field2" class="form-label">City</label>
+            <input type="text" class="form-control" id="field2" formControlName="city" placeholder="Enter City">
+          </div>
+          <div class="mb-3">
+            <label for="field3" class="form-label">Area</label>
+            <input type="text" class="form-control" id="field3" formControlName="area" placeholder="Enter Area">
+          </div>
+          <div class="mb-3">
+            <label for="field4" class="form-label">Rent</label>
+            <input type="text" class="form-control" id="field4" formControlName="rent" placeholder="Enter Rent">
+          </div>
+          <div class="d-flex justify-content-between">
+            <button type="button" class="btn btn-primary" (click)="onSubmit('post')">Post</button>
+            <button type="button" class="btn btn-secondary" (click)="onSubmit('update')">Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
