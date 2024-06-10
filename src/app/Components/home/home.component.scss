@@ -1,0 +1,30 @@
+.custom-select {
+    width: 100%;
+  }
+  
+  /* Adjust the height of the select */
+  .mat-select-trigger {
+    height: 40px; /* Adjust the height to your preference */
+  }
+  
+  /* Adjust the placeholder color */
+  .mat-form-field-label {
+    color: #999; /* Placeholder color */
+  }
+  
+  /* Adjust the underline color when focused */
+  .mat-focused .mat-form-field-underline {
+    background-color: blue; /* Customize the underline color when focused */
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  .card {
+    width: 400px; /* Adjust the width of the card */
+  }
+  
